@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00B4D8"/>
+      <stop offset="55%" stop-color="#0077B6"/>
+      <stop offset="100%" stop-color="#03045E"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .wave { animation: drift 6s linear infinite; }
+    .diver { animation: bob 3s ease-in-out infinite; }
+    .bubble { animation: rise 4s ease-in infinite; }
+    .b2 { animation-delay: 1.3s; }
+    .b3 { animation-delay: 2.6s; }
+    .fish { animation: swim 9s linear infinite; }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-200px); } }
+    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @keyframes rise {
+      0% { transform: translateY(0); opacity: 0; }
+      15% { opacity: 0.9; }
+      100% { transform: translateY(-140px); opacity: 0; }
+    }
+    @keyframes swim {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(-120px); }
+      50.01% { transform: translateX(-120px) scaleX(-1); }
+      100% { transform: translateX(0) scaleX(-1); }
+    }
+  </style>
+
+  <rect width="1000" height="260" rx="20" fill="url(#sea)"/>
+
+  <!-- surface waves -->
+  <g class="wave">
+    <path d="M0 22 Q25 8 50 22 T100 22 T150 22 T200 22 T250 22 T300 22 T350 22 T400 22 T450 22 T500 22 T550 22 T600 22 T650 22 T700 22 T750 22 T800 22 T850 22 T900 22 T950 22 T1000 22 T1050 22 T1100 22 T1150 22 T1200 22 V0 H0 Z" fill="#90E0EF" opacity="0.35"/>
+  </g>
+
+  <!-- bubbles -->
+  <circle class="bubble" cx="215" cy="150" r="5" fill="#CAF0F8"/>
+  <circle class="bubble b2" cx="228" cy="158" r="3.5" fill="#CAF0F8"/>
+  <circle class="bubble b3" cx="208" cy="162" r="4" fill="#CAF0F8"/>
+
+  <!-- diver -->
+  <g class="diver">
+    <rect x="92" y="108" width="40" height="22" rx="6" fill="#ADB5BD"/>
+    <path d="M86 150 L52 166 L58 174 L92 160 Z" fill="#FFB703"/>
+    <ellipse cx="130" cy="152" rx="46" ry="24" fill="#FF8C00"/>
+    <rect x="112" y="142" width="8" height="20" fill="#FFB703"/>
+    <path d="M150 150 L192 160" stroke="#FF8C00" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="176" cy="128" r="18" fill="#FFD6A5"/>
+    <ellipse cx="186" cy="127" rx="14" ry="12" fill="#CAF0F8" opacity="0.6"/>
+  </g>
+
+  <!-- swimming fish -->
+  <g class="fish">
+    <ellipse cx="880" cy="200" rx="18" ry="9" fill="#FFB703"/>
+    <path d="M897 200 L913 191 L913 209 Z" fill="#FFB703"/>
+    <circle cx="870" cy="198" r="2" fill="#03045E"/>
+  </g>
+
+  <!-- text -->
+  <text x="500" y="128" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF">Hosung-Jung</text>
+  <text x="500" y="178" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#CAF0F8">Marine Biologist · Fisheries Resource Science</text>
+</svg>

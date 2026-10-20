@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0077B6,50:00B4D8,100:90E0EF&height=230&section=header&text=Hosung-Jung&fontSize=62&fontColor=ffffff&animation=fadeIn&desc=Marine%20Biologist%20%7C%20Ocean%20Explorer&descAlignY=62&descSize=22" />
+<img src="banner.svg" width="100%" alt="Hosung-Jung - Marine Biologist" />
 
 <br>
 
